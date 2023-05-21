@@ -1,5 +1,5 @@
-GO_GEN="./gen/go/$PROTO_NAME/"
-TS_GEN="./gen/ts/"
+GO_GEN="./gen/go/user/"
+TS_GEN="./gen/ts/user/"
 
 protoc --go_out ${GO_GEN} --go_opt=paths=import --go-grpc_out ${GO_GEN} --go-grpc_opt=paths=import \
 	--js_out=import_style=commonjs,binary:${TS_GEN} \
